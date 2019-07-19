@@ -10,9 +10,9 @@
 		874051AA22D6435500A62C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874051A922D6435500A62C86 /* AppDelegate.swift */; };
 		874051AC22D6435500A62C86 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 874051AB22D6435500A62C86 /* art.scnassets */; };
 		874051AE22D6435500A62C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874051AD22D6435500A62C86 /* ViewController.swift */; };
-		874051B122D6435500A62C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874051AF22D6435500A62C86 /* Main.storyboard */; };
 		874051B322D6435600A62C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874051B222D6435600A62C86 /* Assets.xcassets */; };
 		874051B622D6435600A62C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874051B422D6435600A62C86 /* LaunchScreen.storyboard */; };
+		87A3B52522E041A9002DC914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A3B52422E041A9002DC914 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		874051A922D6435500A62C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		874051AB22D6435500A62C86 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		874051AD22D6435500A62C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		874051B022D6435500A62C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		874051B222D6435600A62C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874051B522D6435600A62C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874051B722D6435600A62C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A3B52422E041A9002DC914 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +59,20 @@
 				874051A922D6435500A62C86 /* AppDelegate.swift */,
 				874051AB22D6435500A62C86 /* art.scnassets */,
 				874051AD22D6435500A62C86 /* ViewController.swift */,
-				874051AF22D6435500A62C86 /* Main.storyboard */,
+				87A3B52422E041A9002DC914 /* Main.storyboard */,
 				874051B222D6435600A62C86 /* Assets.xcassets */,
 				874051B422D6435600A62C86 /* LaunchScreen.storyboard */,
 				874051B722D6435600A62C86 /* Info.plist */,
+				87A3B51E22DD6ED9002DC914 /* Backup */,
 			);
 			path = ARDicee;
+			sourceTree = "<group>";
+		};
+		87A3B51E22DD6ED9002DC914 /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Backup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +135,8 @@
 			files = (
 				874051AC22D6435500A62C86 /* art.scnassets in Resources */,
 				874051B622D6435600A62C86 /* LaunchScreen.storyboard in Resources */,
+				87A3B52522E041A9002DC914 /* Main.storyboard in Resources */,
 				874051B322D6435600A62C86 /* Assets.xcassets in Resources */,
-				874051B122D6435500A62C86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		874051AF22D6435500A62C86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				874051B022D6435500A62C86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		874051B422D6435600A62C86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WQ84MA4V4;
 				INFOPLIST_FILE = ARDicee/Info.plist;
@@ -295,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinhadipratama.ARDicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WQ84MA4V4;
 				INFOPLIST_FILE = ARDicee/Info.plist;
@@ -313,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinhadipratama.ARDicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,7 +332,7 @@
 				874051B922D6435600A62C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		874051BA22D6435600A62C86 /* Build configuration list for PBXNativeTarget "ARDicee" */ = {
 			isa = XCConfigurationList;
@@ -337,7 +341,7 @@
 				874051BC22D6435600A62C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

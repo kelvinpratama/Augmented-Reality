@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NKf-X4-L4Q">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jvQ-WH-fpE">
+            <objects>
+                <viewController id="NKf-X4-L4Q" customClass="ViewController" customModule="ARDicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBe-Dr-4ok">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ix1-Yr-6Uo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-Cl-5Ll">
+                                <rect key="frame" x="20" y="44" width="46" height="44"/>
+                                <state key="normal" title="Button" image="Back Button"/>
+                                <connections>
+                                    <action selector="backButton:" destination="NKf-X4-L4Q" eventType="touchUpInside" id="i8p-oL-XTw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dkc-Cl-5Ll" firstAttribute="leading" secondItem="BKG-Bs-8iQ" secondAttribute="leading" constant="20" id="7Ls-Z9-Dom"/>
+                            <constraint firstItem="BKG-Bs-8iQ" firstAttribute="bottom" secondItem="dkc-Cl-5Ll" secondAttribute="bottom" constant="774" id="9WM-Kp-viE"/>
+                            <constraint firstAttribute="bottom" secondItem="Ix1-Yr-6Uo" secondAttribute="bottom" id="AUI-xw-yVD"/>
+                            <constraint firstItem="BKG-Bs-8iQ" firstAttribute="trailing" secondItem="dkc-Cl-5Ll" secondAttribute="trailing" constant="348" id="BYZ-7a-p4Z"/>
+                            <constraint firstItem="Ix1-Yr-6Uo" firstAttribute="trailing" secondItem="mBe-Dr-4ok" secondAttribute="trailing" id="ORq-8h-zty"/>
+                            <constraint firstItem="dkc-Cl-5Ll" firstAttribute="top" secondItem="BKG-Bs-8iQ" secondAttribute="top" id="X9M-1z-gjA"/>
+                            <constraint firstItem="Ix1-Yr-6Uo" firstAttribute="top" secondItem="mBe-Dr-4ok" secondAttribute="top" id="e3j-OO-OI8"/>
+                            <constraint firstItem="Ix1-Yr-6Uo" firstAttribute="leading" secondItem="mBe-Dr-4ok" secondAttribute="leading" id="mFY-xi-3fV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BKG-Bs-8iQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="Ix1-Yr-6Uo" id="xwa-W3-52Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Wd-HR-PYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30.434782608695656" y="-4.0178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back Button" width="505" height="505"/>
+    </resources>
+</document>
